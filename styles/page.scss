@@ -1,0 +1,30 @@
+---
+---
+
+@import "variables";
+@import "posts-and-pages";
+
+
+
+.page {
+
+    --font-size-h1: 2em;
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+        
+        &,
+        h4,
+        h5,
+        h6 {
+            margin-block: 3.5em 2em;
+        }
+    }
+
+
+    p:not(:last-child) {
+        margin-block-end: 1em;
+    }
+}

@@ -1,0 +1,169 @@
+---
+#
+# This file contains configuration flags to customize this site
+#
+
+
+
+###############################################################################
+#                            Specific to this site                            #
+###############################################################################
+
+introAnimationSeconds: 4
+
+
+
+###############################################################################
+#                                 Neon Basics                                 #
+###############################################################################
+
+# Name of the site (displayed in the content)
+name: Deadass Simple
+# Name of the site (displayed in the tab)
+title: Deadass Simple
+
+# Short bio or description (in share links)
+description: "GOOD SHIT WITHOUT BULLSHIT"
+
+
+source-code:
+    url: https://github.com/DeadassSimple/.com
+    productionBranchName: production
+    issuesSubpath: issues/new
+    eachPage:
+        historySubpathPrefix: commits
+        editSubpathPrefix: edit
+
+
+dates:
+    launch: 2026-11-23
+    newest:
+        web: 2026-11-23
+
+
+brand:
+    name: Deadass Simple
+    color:
+        primary: "#5100FF"
+    logo:
+        monochrome:
+            darkMode:
+                - /images/DeadassSimple-logo.1.0.0.monochrome.transparent.svg
+                - /images/DeadassSimple-logo.1.0.0.monochrome.transparent.webp
+                - /images/DeadassSimple-logo.1.0.0.monochrome.transparent.png
+
+
+social:
+    default-username: DeadassSimple
+    email: Contact@DeadassSimple.com
+    github: DeadassSimple
+    bsky: DeadassSimple.com
+    telegram: DeadassSimple
+#    mastodon:
+#        instance: mastodon.social
+#        username: DeadassSimple
+#    tumblr: DeadassSimple
+
+
+authors:
+    -
+        role: Primary
+        name: Ky
+#        shortName: Ky
+#        tagline-html: Tagline
+        avatar: https://www.gravatar.com/avatar/2f4691f7a1c9d3192fe843a164a27535?s=512px
+        
+        social:
+            blog: https://blog.KyLeggiero.me
+            email: Howdy@KyLeggiero.me
+            github-suffix:
+                personal: KyLeggiero
+            website: https://KyLeggiero.me
+        
+        pronouns:
+            subjective: they
+            objective: them
+            possessive-determiner: their
+            possessive: theirs
+            reflexive: themself
+
+
+default-theme:
+    color: indigo
+    brightness: dark
+
+
+commonPages:
+    about: About
+
+
+sidebar:
+#    headerImage:
+#        picture:
+#            sources:
+#                - /images/Sidebar Header.webp
+#                - /images/Sidebar Header.jpg
+#            alt: "alt text"
+    
+    aboutLink:
+        label: About
+        url: /About
+    
+    defaultLinks:
+        -
+            url: /Products
+            text: Products
+
+
+
+
+###############################################################################
+#                                Jekyll Config                                #
+###############################################################################
+
+# Used for Sitemap.xml and the RSS feed
+url: https://DeadassSimple.com
+
+# Jekyll needs this if you're gonna be weird with SSH keys, and we are
+repository: DeadassSimple/.com
+
+# If timestamps are baked into the page, which time zone should they use?
+timezone: America/Denver
+
+#permalink: `/:title/`, `pretty`, etc.
+permalink: /:title/
+
+# The release of Jekyll that this site is using
+version: v3.8.5
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+    # Use GitHub flavored markdown, including triple backtick fenced code blocks
+    input: GFM
+    # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        # Use existing pygments syntax highlighting css
+        css_class: 'highlight'
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+    style: :expanded  # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+plugins:
+    - jekyll-sitemap  # Create a sitemap using the official Jekyll sitemap gem
+    - jekyll-feed  # Create an Atom feed using the official Jekyll feed gem
+    - jekyll-archives
+    - jekyll-redirect-from  # Allow multiple names for a page
+whitelist: # allow these (apparently listing it as required ain't enough for it to actually work)
+    - jekyll-redirect-from
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+    - CNAME
+
+#chrome_devtools_uuid: 00000000-0000-0000-0000-000000000000
