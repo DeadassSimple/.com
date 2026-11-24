@@ -12,12 +12,6 @@ page-specific-stylesheets:
     - /styles/homepage.css
 ---
 
-{%- assign author = site.authors[0] | default: site.author %}
-
-{%- if author.plurality == "Plural" %}
-    {%- assign authorIsPlural = true %}
-{%- endif %}
-
 
 
 {%- if site.brand.logo %}
@@ -27,16 +21,16 @@ page-specific-stylesheets:
         {%- unless forloop.last %}
     <source srcset="{{ logo }}" />
         {%- else %}
-    <img src="{{ logo }}" class="avatar" />
+    <img src="{{ logo }}" class="logo" />
         {%- endunless %}
     {%- endfor %}
         
 </picture>
 {%- endif %}
 
-<h1 id="brand-name" class="has-shadow-intro-animation">{{ site.brand.name }}</h1>
+<!-- <h1 id="brand-name" class="has-shadow-intro-animation">{{ site.brand.name }}</h1> -->
 <ul id="portal-list" class="plain   flex-row flex-horiz-center flex-wrap   font-2x">
-    <li><a href="/{{ site.commonPages.about | default: 'about'}}" class="big button display-inline-block">About {% if authorIsPlural -%} Us {%- else -%} me {%- endif -%}</a></li>
+    <li><a href="/{{ site.commonPages.about | default: 'about'}}" class="big button display-inline-block">What?</a></li>
     {%- for button in site.sidebar.defaultLinks %}
     <li><a href="{{ button.url }}" class="big button display-inline-block">{{ button.text }}</a></li>
     {%- endfor %}

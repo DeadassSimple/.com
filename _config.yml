@@ -48,9 +48,9 @@ brand:
     logo:
         monochrome:
             darkMode:
-                - /images/DeadassSimple-logo.1.0.0.monochrome.transparent.svg
-                - /images/DeadassSimple-logo.1.0.0.monochrome.transparent.webp
-                - /images/DeadassSimple-logo.1.0.0.monochrome.transparent.png
+                - /images/DeadassSimple-logo.1.0.0.monochrome.svg
+                - /images/DeadassSimple-logo.1.0.0.monochrome.webp
+                - /images/DeadassSimple-logo.1.0.0.monochrome.png
 
 
 social:
@@ -98,12 +98,13 @@ commonPages:
 
 
 sidebar:
-#    headerImage:
-#        picture:
-#            sources:
-#                - /images/Sidebar Header.webp
-#                - /images/Sidebar Header.jpg
-#            alt: "alt text"
+    headerImage:
+       picture:
+           sources:
+                - /images/DeadassSimple-logo.1.0.0.monochrome.svg
+                - /images/DeadassSimple-logo.1.0.0.monochrome.webp
+                - /images/DeadassSimple-logo.1.0.0.monochrome.png
+           alt: "Deadass Simple"
     
     aboutLink:
         label: About

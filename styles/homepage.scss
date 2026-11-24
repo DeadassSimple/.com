@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "brand.css";
 @import "variables";
 @import "general";
 
@@ -41,17 +42,17 @@
 
 
 
-.avatar {
-    --avatar-side-lwngth: calc(min(4in, 50%));
+.logo {
+    --hero-logo-side-length: calc(min(6in, 75vmin));
     
-    position: fixed;
-    top: calc(50vh - (var(--avatar-side-lwngth) / 2));
-    left: calc(50vw - (var(--avatar-side-lwngth) / 2));
+    // position: fixed;
+    // top: calc(50vh - (var(--hero-logo-side-length) / 2));
+    // left: calc(50vw - (var(--hero-logo-side-length) / 2));
     
-    width: var(--avatar-side-lwngth);
-    height: var(--avatar-side-lwngth);
+    width: var(--hero-logo-side-length);
+    height: var(--hero-logo-side-length);
     
-    opacity: 25%;
+    // opacity: 25%;
 }
 
 
