@@ -27,6 +27,7 @@ aside.card {
     }
 }
 
+
 button,
 .button,
 :link.button,
@@ -37,7 +38,22 @@ input[type=reset],
 .floating-action-button,
 .mini-floating-action-button {
     &.low-emphasis,
-    &.flat {
+    &.flat,
+    .sidebar ul &:not(.medium-emphasis):not(.low-emphasis) {
         --button-text-color: var(--theme-text-button-on-dark-color-color);
     }
+}
+
+
+:root {
+    --theme-link-color: var(--theme-accent-color-contrasting-background, var(--theme-accent-color));
+    --theme-link-color-visited: var(--theme-primary-color-contrasting-background, var(--theme-primary-color));
+}
+
+
+:link {
+    color: var(--theme-link-color);
+}
+:visited {
+    color: var(--theme-link-color-visited);
 }

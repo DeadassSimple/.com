@@ -30,7 +30,7 @@ page-specific-stylesheets:
 
 <!-- <h1 id="brand-name" class="has-shadow-intro-animation">{{ site.brand.name }}</h1> -->
 <ul id="portal-list" class="plain   flex-row flex-horiz-center flex-wrap   font-2x">
-    <li><a href="/{{ site.commonPages.about | default: 'about'}}" class="big button display-inline-block">What?</a></li>
+    <li><a href="/{{ site.commonPages.about | default: 'about'}}" class="big button display-inline-block">About</a></li>
     {%- for button in site.sidebar.defaultLinks %}
     <li><a href="{{ button.url }}" class="big button display-inline-block">{{ button.text }}</a></li>
     {%- endfor %}

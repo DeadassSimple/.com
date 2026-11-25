@@ -1,8 +1,6 @@
 ---
 layout: about
 title: About
-app-bar:
-    title: About
 excludeAutoH1: true
 
 author: Ky
