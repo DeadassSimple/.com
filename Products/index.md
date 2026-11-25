@@ -6,7 +6,7 @@ excludeAutoH1: true
 author: Ky
 date: 2026-11-25 01:00
 
-redirect-from:
+redirect_from:
     - apps
     - Apps
 

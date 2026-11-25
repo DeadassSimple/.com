@@ -6,7 +6,7 @@ excludeAutoH1: true
 author: Ky
 date: 2026-11-24 22:12
 
-redirect-from:
+redirect_from:
     - about
     - contact
     - Contact
