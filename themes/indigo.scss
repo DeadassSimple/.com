@@ -1,0 +1,33 @@
+---
+---
+// indigo
+//
+// Variables that the Neon Indigo subtheme uses
+
+@import "https://stylesheets.bhstudios.org/assets/v2/neon/neon-shared-vars.css";
+
+
+
+:root {
+    --theme-indigo-primary-color: #5100FF;
+    --theme-indigo-accent-color: #00FFBF;
+    --theme-indigo-text-on-primary-color-color: #FFF;
+    --theme-indigo-text-on-accent-color-color: var(--theme-indigo-primary-color);
+    --theme-indigo-text-button-on-dark-color-color: color-mix(in oklab, var(--theme-primary-color) 50%, #fff);
+}
+
+
+
+:root {
+    --theme-primary-color: var(--theme-indigo-primary-color);
+    --theme-accent-color: var(--theme-indigo-accent-color);
+    --theme-text-on-primary-color-color: var(--theme-indigo-text-on-primary-color-color);
+    --theme-text-on-accent-color-color: var(--theme-indigo-text-on-accent-color-color);
+    --theme-text-button-on-dark-color-color: var(--theme-indigo-text-button-on-dark-color-color);
+}
+
+
+.color-swatch[theme-swatch-type="color"][theme-swatch-value="indigo"] {
+    --color-swatch-primary-color: var(--theme-indigo-primary-color);
+    --color-swatch-accent-color: var(--theme-indigo-accent-color);
+}

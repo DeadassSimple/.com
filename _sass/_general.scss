@@ -16,10 +16,20 @@
 }
 
 
+*:not(.color-swatch) {
+    corner-shape: notch;
+}
+
+
 .app-bar {
     .title-text {
         text-transform: none;
     }
+}
+
+
+.big {
+    font-size: var(--font-size-h6);
 }
 
 

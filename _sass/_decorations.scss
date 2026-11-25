@@ -22,5 +22,13 @@ img[src=""] {
     background-repeat: no-repeat;
     
     border-radius: 1em;
-    color: var(--dark-theme-foreground-color);
+    
+    &, & * {
+        .post &,
+        .page & {
+            color: var(--theme-text-on-accent-color-color);
+            font-weight: 900;
+            font-size: var(--font-size-h4);
+        }
+    }
 }

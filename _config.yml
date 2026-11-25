@@ -89,8 +89,16 @@ authors:
 
 
 default-theme:
-    color: indigo
     brightness: dark
+
+default-neon-theme-url: "/themes/indigo.css"
+
+custom-themes:
+    -
+        name: Indigo
+        url: "/themes/indigo.css"
+        tag: "indigo"
+        swatch-value: "indigo"
 
 
 commonPages:
@@ -101,9 +109,9 @@ sidebar:
     headerImage:
        picture:
            sources:
-                - /images/DeadassSimple-logo.1.0.0.monochrome.svg
-                - /images/DeadassSimple-logo.1.0.0.monochrome.webp
-                - /images/DeadassSimple-logo.1.0.0.monochrome.png
+               - /images/Sidebar Header.svg
+               - /images/Sidebar Header.webp
+               - /images/Sidebar Header.jpg
            alt: "Deadass Simple"
     
     aboutLink:
@@ -114,6 +122,8 @@ sidebar:
         -
             url: /Products
             text: Products
+    
+    excludeThemeColorPicker: true
 
 
 

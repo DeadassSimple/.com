@@ -114,6 +114,7 @@
         h1, h2, h3 {
             &:not(:first-child) {
                 padding-block-start: max(30vh, 5em);
+                padding-block-start: max(10vh, 2em);
             }
         }
     }
