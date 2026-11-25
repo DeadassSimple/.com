@@ -147,6 +147,8 @@ svg g[fill="#fff"] {
     
     .big.button {
         font-family: "Deadass Simple One", "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", "Helvetica Neue", "Roboto", sans-serif;
+        // Deadass Simple One has only capital letters
+        text-transform: uppercase;
     }
 }
 
