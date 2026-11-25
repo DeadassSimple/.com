@@ -1,0 +1,17 @@
+---
+---
+
+
+{%- assign brand = site.data.brand | default: site.brand %}
+{%- assign brandColor = brand.color %}
+
+
+
+:root {
+    {%- if brandColor.primary %}
+    --brand-color-primary: {{ brandColor.primary }};
+    {%- endif %}
+    {%- if brandColor.primaryDark or brandColor.primary %}
+    --brand-color-primary-dark: {{ brandColor.primaryDark | default: brandColor.primary }};
+    {%- endif %}
+}

@@ -1,0 +1,19 @@
+---
+---
+
+@import "posts-and-pages";
+
+
+
+.story {
+    p:first-of-type {
+        color: var(--theme-foreground-color);
+        font-size: 125%;
+        font-weight: bolder;
+    }
+    
+    
+    h1 {
+        text-align: center;
+    }
+}

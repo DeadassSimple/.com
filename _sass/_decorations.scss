@@ -1,0 +1,34 @@
+
+:root {
+    --rainbow-background-stripe-thickness: 2in;
+    --rainbow-background-stripe-angle: 120deg;
+}
+
+
+
+img[src=""] {
+    display: block;
+    background-color: var(--theme-background-color-at-level-3, magenta);
+}
+
+
+
+.hero {
+    background-image: url("/images/heroBackground.webp");
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    border-radius: 1em;
+    
+    &, & * {
+        .post &,
+        .page & {
+            color: var(--theme-text-on-accent-color-color);
+            font-weight: 900;
+            font-size: var(--font-size-h4);
+        }
+    }
+}

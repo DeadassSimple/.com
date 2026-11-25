@@ -1,0 +1,15 @@
+
+            <li>
+                <a href="{{ include.url }}" target="_blank" class="product-card   big low-emphasis button">
+                    <figure>
+                        {% if include.image-url-for-dark-theme %}<img src="{{ include.image-url-for-dark-theme }}" class="product-card-thumbnail" data-required-theme-type="dark" />
+                        {% endif %}
+                        <img src="{{ include.image-url }}" class="product-card-thumbnail{%- if include.image-full-bleed %} full-bleed {%- endif -%}" {%- if include.image-url-for-dark-theme %} data-required-theme-type="light" {% endif %}/>
+
+                        <figcaption class="product-card-text">
+                            <h3x class="product-card-title">{{ include.title }}</h3x>
+                            <p class="product-card-description">{{ include.description }}</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>

@@ -1,0 +1,39 @@
+---
+---
+
+.hero {
+    *:not(:first-child) {
+        margin-top: 2em;
+    }
+    
+    .avatar {
+        max-width: 4in;
+        max-width: calc(min(100%, 4in));
+    }
+}
+
+
+ul.bullshits {
+    &>li {
+        &>strong {
+            display: block;
+            font-size: var(--font-size-h5);
+            
+            &::before {
+                content: "fuck ";
+                opacity: 75%;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+.social {
+    &.card {
+        .service-name {
+            margin: 0;
+            text-align: start;
+        }
+    }
+}
