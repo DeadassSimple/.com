@@ -2,7 +2,7 @@
 ---
 
 
-{%- assign brand = data.brand | default: site.brand %}
+{%- assign brand = site.data.brand | default: site.brand %}
 {%- assign brandColor = brand.color %}
 
 

@@ -14,7 +14,7 @@
     --light-theme-foreground-color: var(--dark-theme-foreground-color);
     --light-theme-foreground-color--original: hsl(0, 0%, 13%);
     
-    --intro-animation-duration: {{ site.introAnimationDuration }}s;
+    --intro-animation-duration: {{ site.introAnimationSeconds }}s;
     
     
     @at-root
