@@ -1,0 +1,11 @@
+---
+---
+
+@import "posts-and-pages";
+
+
+.post {
+    .cheatsheet.card {
+        max-width: var(--phone-portrait-max-width);
+    }
+}

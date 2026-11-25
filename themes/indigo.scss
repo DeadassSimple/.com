@@ -1,0 +1,47 @@
+---
+---
+// indigo
+//
+// Variables that the Neon Indigo subtheme uses
+
+@import "https://stylesheets.bhstudios.org/assets/v2/neon/neon-shared-vars.css";
+
+
+
+:root {
+    --theme-indigo-primary-color: #5100FF;
+    --theme-indigo-primary-color-contrasting-background: #98a0ff;
+    --theme-indigo-primary-color-contrasting-background: color-mix(in oklab, var(--theme-primary-color) 50%, #fff);
+    --theme-indigo-accent-color: #00FFBF;
+    --theme-indigo-accent-color-contrasting-background: #00ae81;
+    --theme-indigo-accent-color-contrasting-background: color-mix(in oklab, var(--theme-accent-color) 75%, #000);
+    
+    @at-root {
+        .brightness-dark,
+        .brightness-black {
+            --theme-indigo-accent-color-contrasting-background: var(--theme-indigo-accent-color);
+        }
+    }
+    
+    --theme-indigo-text-on-primary-color-color: #FFF;
+    --theme-indigo-text-on-accent-color-color: var(--theme-indigo-primary-color);
+    --theme-indigo-text-button-on-dark-color-color: var(--theme-indigo-primary-color-contrasting-background);
+}
+
+
+
+:root {
+    --theme-primary-color: var(--theme-indigo-primary-color);
+    --theme-primary-color-contrasting-background: var(--theme-indigo-primary-color-contrasting-background);
+    --theme-accent-color: var(--theme-indigo-accent-color);
+    --theme-accent-color-contrasting-background: var(--theme-indigo-accent-color-contrasting-background);
+    --theme-text-on-primary-color-color: var(--theme-indigo-text-on-primary-color-color);
+    --theme-text-on-accent-color-color: var(--theme-indigo-text-on-accent-color-color);
+    --theme-text-button-on-dark-color-color: var(--theme-indigo-text-button-on-dark-color-color);
+}
+
+
+.color-swatch[theme-swatch-type="color"][theme-swatch-value="indigo"] {
+    --color-swatch-primary-color: var(--theme-indigo-primary-color);
+    --color-swatch-accent-color: var(--theme-indigo-accent-color);
+}

@@ -1,0 +1,81 @@
+
+
+@import "to-be-transferred";
+
+@import "decorations";
+@import "typography";
+
+
+
+/*
+ * Rules used on all pages:
+ */
+
+:root {
+    min-width: 17em;
+}
+
+
+*:not(.color-swatch) {
+    corner-shape: notch;
+}
+
+
+.app-bar {
+    .title-text {
+        text-transform: none;
+    }
+}
+
+
+.big {
+    font-size: var(--font-size-h6);
+}
+
+
+.container {
+    max-width: var(--desktop-medium-min-width);
+}
+
+.avatar {
+    border-radius: 99in;
+    max-width: 100%;
+    
+    .sidebar & {
+        height: 4cm;
+    }
+}
+
+
+
+a[name],
+a[id] {
+    &:not([href]) {
+        &::before {
+            content: "";
+            display: block;
+            height: 0;
+            padding-block-start: var(--pure-anchor-top-offset);
+            margin-block-start: calc(0px - var(--pure-anchor-top-offset));
+            
+            
+            @at-root :root {
+                --pure-anchor-top-offset: calc(2 * var(--app-bar-height-auto));
+            }
+        }
+    }
+}
+
+
+
+hr {
+    margin: 1cm 20%;
+}
+
+
+
+ol, ul {
+    &.inline>li {
+        display: inline-block;
+    }
+}

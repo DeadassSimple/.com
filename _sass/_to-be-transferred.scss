@@ -1,0 +1,59 @@
+// This code needs to be transferred to the general Neon repo
+
+aside.card {
+    width: fit-content;
+    margin-inline: auto;
+    font-size: smaller;
+}
+
+
+
+.sidebar {
+    
+    // ul {
+    //     .brightness-dark &,
+    //     .brightness-black & {
+    //         &,
+    //         button, .app-bar button, .button, .app-bar .button, :link.button, .app-bar :link.button, :visited.button, .app-bar :visited.button, input[type=submit], .app-bar input[type=submit], input[type=reset], .app-bar input[type=reset], .image-button, .app-bar .image-button {
+    //             &:not(.medium-emphasis):not(.low-emphasis) {
+    //                 --button-text-color: var(--theme-text-button-on-dark-color-color, var(--theme-primary-color, #105CF4));
+    //             }
+    //         }
+    //     }
+    // }
+    
+    img {
+        width: 100%;
+    }
+}
+
+
+button,
+.button,
+:link.button,
+:visited.button,
+input[type=submit],
+input[type=reset],
+.image-button,
+.floating-action-button,
+.mini-floating-action-button {
+    &.low-emphasis,
+    &.flat,
+    .sidebar ul &:not(.medium-emphasis):not(.low-emphasis) {
+        --button-text-color: var(--theme-text-button-on-dark-color-color);
+    }
+}
+
+
+:root {
+    --theme-link-color: var(--theme-accent-color-contrasting-background, var(--theme-accent-color));
+    --theme-link-color-visited: var(--theme-primary-color-contrasting-background, var(--theme-primary-color));
+}
+
+
+:link {
+    color: var(--theme-link-color);
+}
+:visited {
+    color: var(--theme-link-color-visited);
+}
