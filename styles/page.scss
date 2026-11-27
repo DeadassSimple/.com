@@ -19,7 +19,7 @@
         h4,
         h5,
         h6 {
-            margin-block: 3.5em 2em;
+            margin-block: min(10vh, 3.5em) min(10vh, 2em);
         }
     }
 
