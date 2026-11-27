@@ -93,6 +93,11 @@ default-theme:
 
 default-neon-theme-url: "/themes/indigo.css"
 
+style:
+    google-fonts:
+        # Neon Basics loads these fonts from Google Fonts. This list replaces Neon's default list.
+        plaintext-font-list: "Roboto:100,100i,300,300i,400,400i,500,500i,700|Atkinson+Hyperlegible+Next:400,400i,700,700i|Passion+One:400,700,900"
+
 custom-themes:
     -
         name: Indigo
